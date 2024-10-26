@@ -9,6 +9,9 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
+    <!-- bootsrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -16,19 +19,19 @@
 
 <body>
     <!-- nav -->
-    <nav class="navbar navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg bg-transparent fixed-top py-4" id="navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand text-white fw-bold" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page" href="#">the hotel</a>
+                        <a class="nav-link text-uppercase text-white" aria-current="page" href="#hotel">the hotel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-uppercase text-white" aria-current="page" href="#">rooms</a>
+                        <a class="nav-link text-uppercase text-white" aria-current="page" href="#rooms">rooms</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-uppercase text-white" aria-current="page" href="#">facilities</a>
@@ -50,8 +53,100 @@
         </div>
     </nav>
 
+    <!-- home -->
+    <section>
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2021/09/22/08/35/architecture-6646154_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2023/03/29/10/27/hotel-7885138_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="https://cdn.pixabay.com/photo/2019/07/30/14/12/woman-4373078_1280.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- hotel -->
+    <section id="hotel">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-6 mb-5 mb-lg-0">
+                    <p class="text-uppercase text-secondary">providing quality services since'98.</p>
+                    <h1 class="sub-title my-4">Redefines the luxury hospitality experience.</h1>
+                    <p class="text-secondary lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex culpa temporibus iusto deserunt minima beatae quia! Aspernatur at necessitatibus dolor voluptatum ab nihil fuga? Voluptatum!</p>
+                    <p class="text-secondary lh-base">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet reprehenderit voluptatum eum. Enim porro laboriosam cupiditate excepturi iure.</p>
+                    <a href="#" class="text-decoration-none bg-secondary text-white px-3 py-2 rounded-pill text-uppercase fs-6 d-inline-block">read more <i class="bi bi-arrow-right"></i></a>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <img src="https://cdn.pixabay.com/photo/2017/03/17/12/32/girl-2151428_1280.jpg" alt="" class="w-100" style="height: 30rem; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- rooms -->
+    <section id="rooms" class="bg-body-secondary">
+        <div class="container py-5">
+            <h1 class="title">rooms & suits</h1>
+            <p class="text-secondary lh-lg w-50 my-4 text-center mx-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius in dolorum consequuntur placeat molestiae nisi expedita enim. In, similique dignissimos!</p>
+            <div class="row my-5">
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div style="height: 15rem;" class="overflow-hidden">
+                            <img src="https://cdn.pixabay.com/photo/2021/12/18/06/13/hotel-6878058_1280.jpg" alt="" class="card-img-top object-fit-cover h-100">
+                        </div>
+                        <div class="card-body p-5">
+                            <a href="#" class="text-uppercase text-decoration-none text-white bg-secondary d-block text-center py-2" style="font-size: .8rem;">from $50 / per night</a>
+                            <h2 class="card-title text-center text-uppercase fs-6 my-3">classic double room</h2>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid minima porro asperiores numquam odit tempore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="overflow-hidden" style="height: 15rem;">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/22/19/11/brick-wall-1850095_1280.jpg" alt="" class="card-img-top object-fit-cover h-100">
+                        </div>
+                        <div class="card-body p-5">
+                            <a href="#" class="text-uppercase text-decoration-none text-white bg-secondary d-block text-center py-2" style="font-size: .8rem;">from $50 / per night</a>
+                            <h2 class="card-title text-center text-uppercase fs-6 my-3">classic double room</h2>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid minima porro asperiores numquam odit tempore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="overflow-hidden" style="height: 15rem;">
+                            <img src="https://cdn.pixabay.com/photo/2023/07/27/21/40/ai-generated-8154098_1280.jpg" alt="" class="card-img-top object-fit-cover h-100">
+                        </div>
+                        <div class="card-body p-5">
+                            <a href="#" class="text-uppercase text-decoration-none text-white bg-secondary d-block text-center py-2" style="font-size: .8rem;">from $50 / per night</a>
+                            <h2 class="card-title text-center text-uppercase fs-6 my-3">classic double room</h2>
+                            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam aliquid minima porro asperiores numquam odit tempore.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- custom js -->
+    <script src="js/main.js"></script>
 </body>
 
 </html>
